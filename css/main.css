@@ -1,64 +1,101 @@
-* {
+*{
 	box-sizing: border-box;
 }
-body{
-	padding:0;
-	margin:0;
-	background-color: #FFAE42;
-	-webkit-transition: background-color 1.5s ease, color 1.5s ease;
-    -moz-transition: background-color 1.5s ease, color 1.5s ease;
-    -o-transition: background-color 1.5s ease, color 1.5s ease;   
-	transition: background-color 1.5s ease, color 1.5s ease;
-	color: #FFAE42;
-	font-size: 2em;
-	font-family: Arial, sans-serif;
+body, html{
+	padding: 0;
+	margin: 0;
+	font-size: 1.4em;
+	font-family: 'Marck Script', Arial, cursive;	
 }
-.container {	
-	max-width: 600px;
-	min-height: 220px;
-	margin: 5% auto;	
-	background-color: white;
+
+video {
+	position: fixed;
+	right: 0;
+	bottom: 0;	
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: -9999;
+}
+.main-container {
 	text-align: center;
+}
+audio {	
+	position: relative;
+	z-index: 3;
+	top: 30px;
+}
+
+.text {		
+	max-width: 600px;
+	min-height: 220px;	
+	width:50%;
+	margin: 5% auto;	
 	padding: 30px; 
-	border-radius: 10px;	
-	font-family: 'Marck Script', cursive;	
+	text-align: center;
+	color: black;
+}
+
+.container {	
+	position: absolute;
+	z-index: 2;
+	background: linear-gradient(to bottom, rgba(255, 255, 255, 0.9), transparent 95%);	
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;	
+	text-align: center;
 }
 .button {	
-	-webkit-transition: background-color 1.5s ease;
-    -moz-transition: background-color 1.5s ease;
-    -o-transition: background-color 1.5s ease;   
-	transition: background-color 1.5s ease;
-	background-color: #FFAE42;
+	background-color: black;
 	color: white;
 	height: 50px;
-	width: 150px;
+	width: 100px;
 	padding: 10px;
 	border-radius: 10px;
 	cursor: pointer;
+	text-align: center;
 }
 .inner-container {		
 	min-height: 200px;
 }
 
-a {	
-	text-decoration: none;
+.top {	
+	font-size:0.5em;
 	font-family: Arial, sans-serif;
-	color: white;
+	font-weight: bold;
 }
 
+a {
+	text-decoration: none;
+}
 a:hover {	
-	color: darkslategray;
+	color: darkslateblue;
 }
-
 
 .container a{
 	margin-top: 5px;
-	display: inline-block;	
+	display: inline-block;
+	text-align: center;	
 }
 
 .footer {
-	text-align: center; 
-	color: white;
-	font-size: .7em;
-} 
+	text-align: center;
+}
+
+
+@media (max-width: 1090px){	
+	.text {
+		padding: 30px 10px;
+		width:100%;
+	}
+
+	.button {
+		width: 60px;
+	}	
+}
+	
+}
+
 
