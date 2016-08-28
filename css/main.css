@@ -66,22 +66,24 @@ audio {
 	font-family: Arial, sans-serif;
 	font-weight: bold;
 }
+a:hover {	
+	color: orange;
+}
 
-a {
+.top a {
 	text-decoration: none;
 }
-a:hover {	
-	color: darkslateblue;
+.top a:visited {
+	color: black;
+}
+.top a:hover {
+	color: orange;
 }
 
 .container a{
 	margin-top: 5px;
 	display: inline-block;
 	text-align: center;	
-}
-
-.footer {
-	text-align: center;
 }
 
 
